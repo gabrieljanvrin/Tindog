@@ -1,0 +1,208 @@
+/* Base Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Layout */
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Section Styles */
+.colored-section {
+  background-color: #ff4c68;
+  color: whitesmoke;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15%;
+  text-align: left;
+}
+
+/* Title Image Styles */
+.title_img {
+  transform: rotate(25deg);
+  position: absolute;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
+  transition: all 0.3s ease-in;
+  margin-left: auto;
+  margin-right: auto;
+  /* Center the icon horizontally */
+}
+
+.nav-link:hover {
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 3%;
+  padding-bottom: 0;
+}
+
+/* Icon Styles */
+i {
+  color: #ef8172;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1rem;
+  display: block;
+  /* Ensure the icon takes up the full width */
+  margin-left: auto;
+  /* Center the icon horizontally */
+  margin-right: auto;
+  /* Center the icon horizontally */
+}
+
+i:hover {
+  color: #ff4c68;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+
+/* Features Section */
+#features {
+  position: relative;
+}
+
+.feature-box {
+  padding: 4%;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.carousel-item {
+  padding: 8% 15%;
+}
+
+/* Press Section */
+#press {
+  background-color: #ef8172;
+}
+
+/* Image Styles */
+img {
+  width: 15%;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.24);
+}
+
+/* Pricing Section */
+.pricing-column {
+  padding: 3% 2%;
+}
+
+#cta h3 {
+  font-family: "Montserrat-Black", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Call to Action Icons */
+.apple-icon {
+  color: white;
+}
+
+.playstore-icon {
+  color: #000;
+}
+
+.footer-icon {
+  color: #000;
+  padding: 11px;
+}
+
+#copyright-text {
+  color: lightgrey;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 1028px) {
+  #title .container-fluid {
+    text-align: center !important;
+  }
+
+  .title_img {
+    position: static;
+    transform: rotate(0deg);
+    width: auto;
+  }
+}
+
+/* Animations */
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
